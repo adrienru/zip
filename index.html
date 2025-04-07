@@ -8,11 +8,12 @@
 </head>
 <body>
   <form action="/login" method="POST">
-    <input type="text" placeholder="username" />
-    <input type="password" placeholder="password" />
-    <div id="example-container"></div>
-    <button type="submit">Log in</button>
-  </form>
+  <input type="text" placeholder="username" name="username" />
+  <input type="password" placeholder="password" name="password" />
+  <div class="cf-turnstile" data-sitekey="<YOUR_SITE_KEY>"></div>
+  <button type="submit">Log in</button>
+</form>
+
 
   <!-- Incluir el archivo JavaScript que contiene la lógica de Turnstile -->
   <script src="turnstile.js"></script>
