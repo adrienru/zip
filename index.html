@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Login</title>
+  <!-- Carga de la librería de Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+</head>
+<body>
+  <form action="/login" method="POST">
+    <input type="text" placeholder="username" />
+    <input type="password" placeholder="password" />
+    <div id="example-container"></div>
+    <button type="submit">Log in</button>
+  </form>
+
+  <!-- Incluir el archivo JavaScript que contiene la lógica de Turnstile -->
+  <script src="turnstile.js"></script>
+</body>
+</html>
